@@ -1,0 +1,125 @@
+.product-search-wrapper {
+    margin-bottom: 20px;
+}
+.product-search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+.product-item {
+    margin-bottom: 10px;
+}
+
+ul.product-list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 0;
+}
+
+ul.product-list li {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    list-style: none;
+}
+ul.product-list iframe{
+    width: 100% !important;
+    height: 190px !important;
+   
+}
+.product-thumbnail{
+    width: 100% !important;
+    height: 200px !important;
+}
+.product-thumbnail2{
+    width: 100% !important;
+    height: 200px !important;
+}
+.product-item h3{
+    color: #eea86b;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26px;
+    transition: all 0.3s ease-in-out;
+}
+.product-item h3:hover{
+    color: #1a1a1a;
+}
+.product-search-results{
+    position: relative;
+    min-height: 400px;
+}
+
+.product-search-results .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.product-search-results .loading:before {
+    content: url("http://wordpressapi.test/wp-content/uploads/2025/04/Animation-1745387619441.gif");
+    width: 55px;
+}
+.product-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.product-pagination .pagination-button.active{
+   background: #eea86b;
+   color: #fff !important;
+}
+.product-pagination .pagination-button {
+    display: inline-block !important;
+    color: #666 !important;
+    margin-right: 10px !important;
+    padding: 10px 15px !important;
+    border-radius: 4px !important;
+    font-size: 16px !important;
+    transition: all 0.4s ease-in-out !important;
+    border: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+.product-item .product-price {
+    font-family: 'Georgia', serif;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+input.product-search-input:focus{
+    outline: none;
+}
+input.product-search-input {
+    border: 1px solid #eea86b;
+    background: #fff;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
